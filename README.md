@@ -12,6 +12,8 @@ That being said, we want the latest and greatest, so moving on... (c) __jcmlsn__
 # Hack-to!
 * __Clean install is preferred. Use [DDU](https://www.guru3d.com/files-details/display-driver-uninstaller-download.html) for driver uninstall and Windows Driver update disabling.__
 
+__FYI__: You can download original INFs or WHOLE original driver from release files.
+
 1. Go to [Releases](https://github.com/ishad0w/amd---vega-m-drivers-hack/releases) and get latest one ZIP release (or WHQL).
 2. Download driver from release notes link. (Original AMD Driver).
 3. Execute. Wait for unpack and error. :)
