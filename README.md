@@ -1,15 +1,16 @@
 # Intel 8I7HVK "Radeon RX Vega M GH" Driver Hack.
-# ... with fully working AMD Software.
+... with fully working AMD Software.
 
 Long story short. Intel and AMD has drop support for Radeon RX Vega M.
 
-Last official driver - [20.4.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-4-1). (or WHQL [20.2.2](https://www.amd.com/ru/support/kb/release-notes/rn-rad-win-20-2-2))
+* Last BETA driver - [20.4.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-4-1).
+* Last WHQL driver - [20.2.2](https://www.amd.com/ru/support/kb/release-notes/rn-rad-win-20-2-2).
 
 # DISCLAIMER: I take no responsibility for damage to your hardware. You do this at your own risk. 
-# That being said, we want the latest and greatest, so moving on... (c) __jcmlsn__
+That being said, we want the latest and greatest, so moving on... (c) __jcmlsn__
 
 # Hack-to!
-[!] Clean install is preferred. Use [DDU](https://www.guru3d.com/files-details/display-driver-uninstaller-download.html) for driver uninstall and Windows Driver update disabling. [!]
+* __Clean install is preferred. Use [DDU](https://www.guru3d.com/files-details/display-driver-uninstaller-download.html) for driver uninstall and Windows Driver update disabling.__
 
 1. Go to [Releases](https://github.com/ishad0w/amd---vega-m-drivers-hack/releases) and get latest one ZIP release (or WHQL).
 2. Download driver from release notes link. (Original AMD Driver).
@@ -33,4 +34,4 @@ Last official driver - [20.4.1](https://www.amd.com/en/support/kb/release-notes/
 
 Not the easiest way, but working pretty great.
 
-// Many thanks to __jcmlsn__ and __msrl__ from community.amd.com. :)
+// Many thanks to __jcmlsn__ and __msrl__ from community.{amd,intel}.com. :)
