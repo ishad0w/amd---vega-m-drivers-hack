@@ -17,7 +17,7 @@ __FYI__: You can download original INFs or WHOLE original driver from release fi
 1. Go to [Releases](https://github.com/ishad0w/amd---vega-m-drivers-hack/releases) and get latest one ZIP release (or WHQL).
 2. Download driver from release notes link. (Original AMD Driver).
 3. Execute. Wait for unpack and error. :)
-4. Go to C:\AMD\\__DRIVER_NAME__\Packages\Drivers\Display\WT6A_INF\ and make a backup of \*.inf files that we will replace next.
+4. Go to C:\AMD\\__DRIVER_NAME__\Packages\Drivers\Display\WT6A_INF\ and make a backup of \*.inf files that we will replace next. (You can Skip this step, if you early downloaded original INFs from release assets).
 5. Go to Windows Settings, Updates & Security, Recovery, Advanced startup, Restart now, Troubleshoot, Advanced options, Startup settings. 
 6. When Windows Starts up choose option 7 (Disable driver signature enforcement). (Press F7).
 7. Replace files in C:\AMD\\__DRIVER_NAME__\ with extracted files from release.
