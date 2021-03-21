@@ -3,7 +3,7 @@
 
 Long story short. Intel and AMD has drop support for Radeon RX Vega M.
 
-* Last __WHQL__ driver - [20.2.2](https://www.amd.com/ru/support/kb/release-notes/rn-rad-win-20-2-2).
+* Last __WHQL__ driver - [20.2.2](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-2-2).
 * Last __BETA__ driver - [20.4.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-4-1).
 
 # DISCLAIMER: I take no responsibility for damage to your hardware. You do this at your own risk. 
