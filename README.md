@@ -8,7 +8,7 @@ __Official Drivers__:
 * Last __BETA__ driver - [20.4.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-4-1).
 * Last __STABLE__ driver - [20.3.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-3-1). _IMHO_. 
 
-_Many people reccomends [19.12.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-19-12-1) for hard workloads. [Adobe compability](https://community.intel.com/t5/Intel-NUCs/HELP-Hades-Canyon-NUC8i7HVKVA-with-AMD-Adrenaline-freezes/m-p/1191030)._
+_Many people reccomends [19.12.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-19-12-1) for hard workloads. [Adobe compatibility](https://community.intel.com/t5/Intel-NUCs/HELP-Hades-Canyon-NUC8i7HVKVA-with-AMD-Adrenaline-freezes/m-p/1191030)._
 
 # DISCLAIMER: I take no responsibility for damage to your hardware. You do this at your own risk. 
 That being said, we want the latest and greatest, so moving on... (c) __jcmlsn__
