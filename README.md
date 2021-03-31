@@ -3,14 +3,18 @@
 
 Long story short. Intel and AMD has drop support for Radeon RX Vega M.
 
+__Official Drivers__:
 * Last __WHQL__ driver - [20.2.2](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-2-2).
 * Last __BETA__ driver - [20.4.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-4-1).
+* Last __STABLE__ driver - [20.3.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-3-1). _IMHO_. 
+
+_Many people reccomends [19.12.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-19-12-1) for hard workloads. [Adobe compability](https://community.intel.com/t5/Intel-NUCs/HELP-Hades-Canyon-NUC8i7HVKVA-with-AMD-Adrenaline-freezes/m-p/1191030)._
 
 # DISCLAIMER: I take no responsibility for damage to your hardware. You do this at your own risk. 
 That being said, we want the latest and greatest, so moving on... (c) __jcmlsn__
 
 # Hack-to!
-* __Clean install is preferred. Use [DDU](https://www.guru3d.com/files-details/display-driver-uninstaller-download.html) for driver uninstall and Windows Driver update disabling.__
+* __Clean install is preferred. Use [DDU](https://www.wagnardsoft.com/display-driver-uninstaller-ddu-) for driver uninstall and Windows Driver update disabling.__
 
 __FYI__: You can download original INFs or WHOLE original driver from release files.
 
@@ -26,13 +30,13 @@ __FYI__: You can download original INFs or WHOLE original driver from release fi
 10. Do not restart PC yet! (Just close installation window).
 11. Restore original \*.inf files in C:\AMD\\__DRIVER_NAME__\Packages\Drivers\Display\WT6A_INF\.
 12. Manually update your Display Driver by launching "Device Manager" ("WinFlag" + "R", followed by "devmgmt.msc") and right-clicking "Display adapters > 'Radeon RX Vega M GH/GL'", followed by "Update driver".
-13. Choose "Browse my computer for driver software", followed by "Let me pick from a list of available drivers on my computer".
-14. Paste full path to folder C:\AMD\\__DRIVER_NAME__\Packages\Drivers\Display\WT6A_INF\ don't click "Browse..."!
-15. Once you've entered the correct path, click "OK", and a list will be populated with available drivers to use. 
-16. Select the first "Radeon RX Vega". It will prompt you a warning, click "Yes" to proceed.
-17. Wait until screen stop "blinking".
-18. Restart!
-19. You are ready to go with Latest AMD driver and fully working AMD Software.
+13. Choose "Browse my computer for driver software", followed by "Let me pick from a list of available drivers on my computer" and then click on "__I have disk__”.
+15. Paste full path to folder C:\AMD\\__DRIVER_NAME__\Packages\Drivers\Display\WT6A_INF\ don't click "Browse..."!
+16. Once you've entered the correct path, click "OK", and a list will be populated with available drivers to use. 
+17. Select the __first__ "__Radeon RX Vega__". It will prompt you a warning, click "__Yes__" to proceed.
+18. Wait until screen stop "blinking".
+19. __Restart!__
+20. You are ready to go with Latest AMD driver and fully working AMD Software.
 
 Not the easiest way, but working pretty great.
 
