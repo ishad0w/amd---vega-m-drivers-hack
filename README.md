@@ -8,6 +8,8 @@ __Official Drivers__:
 * Last __BETA__ driver - [20.4.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-4-1).
 * Last __STABLE__ driver - [20.3.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-3-1). _IMHO_. 
 
+Last "Intel Recommended" driver at __Download Center__ - [Radeon™ RX Vega M Graphics Driver for Windows® 10 64-bit for NUC8i7HVK](https://downloadcenter.intel.com/download/28600/Radeon-RX-Vega-M-Graphics-Driver-for-Windows-10-64-bit-for-NUC8i7HNK-NUC8i7HVK)
+
 _Many people reccomends [19.12.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-19-12-1) for hard workloads. [Adobe compatibility](https://community.intel.com/t5/Intel-NUCs/HELP-Hades-Canyon-NUC8i7HVKVA-with-AMD-Adrenaline-freezes/m-p/1191030)._
 
 # DISCLAIMER: I take no responsibility for damage to your hardware. You do this at your own risk. 
