@@ -1,9 +1,9 @@
-# Intel 8I7HVK "Radeon RX Vega M GH" Driver Hack.
+# Intel 8I7HVK/8i7HNK "Radeon RX Vega M" Driver Hack.
 ... with fully working AMD Software.
 
 Long story short. Intel and AMD has drop support for Radeon RX Vega M.
 
-__Official Drivers__:
+__Official Drivers__ _(with Vega M support)_:
 * Last __WHQL__ driver - [20.2.2](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-2-2).
 * Last __BETA__ driver - [20.4.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-4-1).
 * Last __STABLE__ driver - [20.3.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-3-1). _IMHO_. 
