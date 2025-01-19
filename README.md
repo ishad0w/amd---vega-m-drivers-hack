@@ -1,46 +1,89 @@
-# Intel 8I7HVK/8i7HNK "Radeon RX Vega M" Driver Hack
-... with fully working AMD Software.
-# Project is discontinued :(
+# Intel® NUC 8i7HVK/8i7HNK "Radeon RX Vega M" Driver Hack
+...with a fully functional AMD Software suite.
 
-Long story short. Intel and AMD has drop support for Radeon RX Vega M.
+> **Project is discontinued.**  
+> Intel and AMD have officially dropped support for the Radeon RX Vega M.  
+> **Use at your own risk.**
 
-__Official Drivers__ _(with Vega M support)_:
-* Last __WHQL__ driver - [20.2.2](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-2-2).
-* Last __BETA__ driver - [20.4.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-4-1).
-* Last __STABLE__ driver - [20.3.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-3-1). _IMHO_. 
+---
 
-Last "Intel Recommended" driver at __Download Center__ - [Radeon™ RX Vega M Graphics Driver for Windows® 10 64-bit for NUC8i7HVK](https://downloadcenter.intel.com/download/28600/Radeon-RX-Vega-M-Graphics-Driver-for-Windows-10-64-bit-for-NUC8i7HNK-NUC8i7HVK)
+## Overview
 
-_Many people reccomends [19.12.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-19-12-1) for hard workloads. [Adobe compatibility](https://community.intel.com/t5/Intel-NUCs/HELP-Hades-Canyon-NUC8i7HVKVA-with-AMD-Adrenaline-freezes/m-p/1191030)._
+### Official Radeon RX Vega M drivers:
+- **Last WHQL driver:** [20.2.2](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-2-2)
+- **Last Beta driver:** [20.4.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-4-1)
+- **Last “Stable” driver (IMHO):** [20.3.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-20-3-1)
 
-# DISCLAIMER: I take no responsibility for damage to your hardware. You do this at your own risk. 
-That being said, we want the latest and greatest, so moving on... (c) __jcmlsn__
+#### Intel’s Recommended Version
+- **Radeon™ RX Vega M Graphics Driver for Windows® 10 64-bit for NUC8i7HVK** (from Intel Download Center):  
+  [Download Link](https://downloadcenter.intel.com/download/28600/Radeon-RX-Vega-M-Graphics-Driver-for-Windows-10-64-bit-for-NUC8i7HNK-NUC8i7HVK)
 
-# Hack-to!
-* __Clean install is preferred. Use [DDU](https://www.wagnardsoft.com/display-driver-uninstaller-ddu-) for driver uninstall and Windows Driver update disabling.__
+> Many users also recommend [19.12.1](https://www.amd.com/en/support/kb/release-notes/rn-rad-win-19-12-1) for heavy workloads (e.g. [Adobe compatibility issues](https://community.intel.com/t5/Intel-NUCs/HELP-Hades-Canyon-NUC8i7HVKVA-with-AMD-Adrenaline-freezes/m-p/1191030)).
 
-__FYI__: You can download original INFs or WHOLE original driver from release files.
+---
 
-1. Go to [Releases](https://github.com/ishad0w/amd---vega-m-drivers-hack/releases) and get latest one ZIP release (or WHQL).
-2. Download driver from release notes link. (Original AMD Driver).
-3. Execute. Wait for unpack and error. :)
-4. Go to C:\AMD\\__DRIVER_NAME__\Packages\Drivers\Display\WT6A_INF\ and make a backup of \*.inf files that we will replace next. (You can Skip this step, if you early downloaded original INFs from release assets).
-5. Go to Windows Settings, Updates & Security, Recovery, Advanced startup, Restart now, Troubleshoot, Advanced options, Startup settings. 
-6. When Windows Starts up choose option 7 (Disable driver signature enforcement). (Press F7).
-7. Replace files in C:\AMD\\__DRIVER_NAME__\ with extracted files from release.
-8. Run __Setup.exe__.
-9. When prompted “driver is not signed” continue anyway. Error alert may appear (if not clean install) at the installation end. it’s ok.
-10. Do not restart PC yet! (Just close installation window).
-11. Restore original \*.inf files in C:\AMD\\__DRIVER_NAME__\Packages\Drivers\Display\WT6A_INF\.
-12. Manually update your Display Driver by launching "Device Manager" ("WinFlag" + "R", followed by "devmgmt.msc") and right-clicking "Display adapters > 'Radeon RX Vega M GH/GL'", followed by "Update driver".
-13. Choose "Browse my computer for driver software", followed by "Let me pick from a list of available drivers on my computer" and then click on "__I have disk__”.
-15. Paste full path to folder C:\AMD\\__DRIVER_NAME__\Packages\Drivers\Display\WT6A_INF\ don't click "Browse..."!
-16. Once you've entered the correct path, click "OK", and a list will be populated with available drivers to use. 
-17. Select the __first__ "__Radeon RX Vega__". It will prompt you a warning, click "__Yes__" to proceed.
-18. Wait until screen stop "blinking".
-19. __Restart!__
-20. You are ready to go with Latest AMD driver and fully working AMD Software.
+## Disclaimer
+I take **no responsibility** for any damage to your hardware. You proceed **at your own risk**.  
+That being said, if you want the latest AMD Adrenaline driver and software for your Radeon RX Vega M, here is a method that has worked for many.
 
-Not the easiest way, but working pretty great.
+---
 
-// Many thanks to __jcmlsn__, __msrl__ and other __great people__ from community.{amd,intel}.com. :)
+## Hack Instructions
+
+> **Tip:** A clean install is preferred. Use [DDU (Display Driver Uninstaller)](https://www.wagnardsoft.com/display-driver-uninstaller-ddu-) to remove existing drivers and disable Windows Driver Updates before proceeding.
+
+1. **Download Required Files:**
+   1. Go to [Releases](https://github.com/ishad0w/amd---vega-m-drivers-hack/releases) on GitHub and download the latest ZIP release (or WHQL release if available).
+   2. Download the desired driver from the release notes link (the official AMD driver, e.g., 20.2.2, 20.4.1, etc.).
+
+2. **Extract and Prepare:**
+   1. Run the downloaded AMD driver setup. It will unpack and then likely error out (since the hardware is not officially supported).
+   2. Navigate to `C:\AMD\DRIVER_NAME\Packages\Drivers\Display\WT6A_INF\` and make a backup of all `*.inf` files.  
+      *(You can skip this if you previously downloaded the original INFs from the GitHub release assets.)*
+
+3. **Disable Driver Signature Enforcement:**
+   1. Go to **Windows Settings** → **Update & Security** → **Recovery** → **Advanced startup** → **Restart now**.
+   2. After reboot, select **Troubleshoot** → **Advanced options** → **Startup settings**.
+   3. When the system restarts again, press **F7** (or option **7**) to **Disable driver signature enforcement**.
+
+4. **Replace INF Files:**
+   1. From the ZIP you downloaded in Step 1, extract the modified INF files.
+   2. Replace the files in `C:\AMD\DRIVER_NAME\` (and its subfolders as indicated) with the modified versions.
+
+5. **Install the Driver:**
+   1. Run `Setup.exe` in `C:\AMD\DRIVER_NAME\`.
+   2. If prompted about unsigned drivers, click **Install this driver software anyway**.
+   3. If you get an error alert at the end (especially if it wasn’t a completely clean install), ignore it for now.
+   4. **Do not restart** when prompted. Close the installation window instead.
+
+6. **Restore Original INF Files:**
+   1. Copy the backup `*.inf` files back to `C:\AMD\DRIVER_NAME\Packages\Drivers\Display\WT6A_INF\`.
+   2. This ensures the final manual driver update will reference valid (original) INF files.
+
+7. **Manually Update Driver in Device Manager:**
+   1. Press **Win + R**, type `devmgmt.msc`, and press **Enter**.
+   2. In **Device Manager**, expand **Display adapters**.
+   3. Right-click on **Radeon RX Vega M GH/GL** (it may show a warning icon) and select **Update driver**.
+   4. Choose **Browse my computer for driver software**.
+   5. Choose **Let me pick from a list of available drivers on my computer**.
+   6. Click **Have Disk...**, then enter the full path to `C:\AMD\DRIVER_NAME\Packages\Drivers\Display\WT6A_INF\`.
+      > **Important:** Do not just click “Browse...” again; you must manually enter the path.
+   7. Click **OK**. A list of available drivers should appear.
+   8. Select the **first** listed **Radeon RX Vega** driver (it may be titled slightly differently, but it should be the top option).
+   9. A warning message will pop up. Click **Yes** to confirm.
+
+8. **Finish Up:**
+   1. Wait for the driver to finish installing (your screen may flicker).
+   2. **Restart your PC** once the installation completes.
+
+After the reboot, your Radeon RX Vega M should be running the newer AMD Adrenaline software with all features enabled. 
+
+---
+
+## Credits
+- **jcmlsn**, **msrl**, and other community members from [community.amd.com](https://community.amd.com/) and [community.intel.com](https://community.intel.com/) for their research and shared knowledge.
+- Everyone else who has contributed to or tested this workaround.
+
+---
+
+**Enjoy the latest AMD driver and software on your Intel NUC!**
